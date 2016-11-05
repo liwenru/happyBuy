@@ -1,0 +1,34 @@
+.n_links_area {
+    text-align: center;
+    color: #e0e0e0;
+}
+.n_links_area a {
+	    padding: 0 9px;
+    font-size: .14rem;
+    color: #757575;
+}
+
+.n_links_area span{
+    font-size: .14rem;
+    color: #757575;
+}
+.n-footer {
+	background: #eee;
+    color: #757575;
+    line-height: 1.5;
+    text-align: center;
+    font-size: .2rem;
+	padding: 8%;
+}
+
+.nf-link-area li {
+    display: inline-block;
+}
+.nf-link-area a.current {
+    color: #333;
+}
+.nf-link-area a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #757575;
+}

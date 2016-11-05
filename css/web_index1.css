@@ -1,0 +1,247 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper{
+	position: relative;
+	z-index: 2;
+}
+.page-index{
+	background: #FFF;
+    padding-bottom: 0.5rem;
+}
+ .download-app {
+    position: relative;
+}
+ .download-app a {
+    display: block;
+    vertical-align: top;
+}
+.download-app a img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.close{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: -0.2rem;
+	
+}
+.close a{
+	display: block;
+}
+.close a img{
+	width: 30%;
+}
+
+
+
+.index-header{
+	background: #fff;
+	/*padding: 0 0 0.1rem;*/
+}
+.search-bar {
+    text-align: center;
+}
+.icon-search{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    background: url(../img/fangda.jpg) no-repeat;
+    background-size: 12%;
+    font-size: 0.4rem;
+    padding: 0.1rem;
+    background-position: left;
+    box-sizing: border-box;
+    text-indent: 1rem;
+    border: 0;
+	
+}
+
+.search-bottom{
+	border: 1px solid #E3E3E3;
+	margin: .2rem;
+	height: .08rem;
+	border-top: 0;
+	margin-top: -.06rem;
+}
+
+.slider{
+	width: 100%;
+	/*height: 100%;*/
+	overflow: hidden;
+	position: relative;
+	
+}
+.slider-wrap{
+	width:200%;
+	overflow: hidden;
+	
+	
+}
+.slider-wrap img{
+	width: 50%;
+	float: left;
+}
+.nav-list{
+	position: absolute;
+		bottom: .01rem;
+				text-align: center;
+				width: 100%
+}
+
+.nav-list span{
+				display: inline-block;
+				width: .1rem;
+				height: .1rem;
+				border-radius: .05rem;
+				background: #FFF;
+				filter: alpha(Opacity=50);
+				opacity: .5;
+				box-shadow: 0 0 1px #ccc
+}
+.nav-list span.on {
+				filter: alpha(Opacity=100);
+				opacity: 1;
+				background: #f8f8f8;
+				box-shadow: 0 0 2px #ccc
+			}
+
+
+
+.mcells_auto_fill{
+	background-color: #F5F5F5;
+	padding: .1rem 0;
+}
+
+.body{
+	position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.items{
+	position: absolute;
+		
+}
+.items img{
+	width: 100%;
+}
+
+
+.item {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    padding: .3rem 0;
+    border-bottom: 1px solid #F2F2F2;
+    background-color: white;
+}
+
+.img{
+	width: 2rem;
+	/*height: 2.45rem;*/
+	position: relative;
+}
+.ico{
+	width: 100%;
+}
+
+.info{
+	-webkit-box-flex: 1;
+	width: 100%;
+	margin-right: .2rem;
+}
+.name{
+	font-size:.3rem ;
+	color: #000;
+	margin-bottom: .1rem;
+}
+.brief{
+	font-size:.26rem ;
+	line-height: .34rem;
+	color: #969696;
+	margin-bottom: .12rem;
+	
+}
+.price{
+	font-size: .28rem;
+	color: #FE4900;
+}
+
+
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 99;
+	border-top: 1px solid #E0E0E0;
+}
+.footer ul{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.footer ul li{
+	-webkit-box-flex: 1;
+	width: 100%;
+	text-align: center;
+}
+
+.footer ul li a{
+	display: block;
+	padding: .12rem 0;
+}
+.ispr{
+    width: .6rem;
+    height: .6rem;
+    background-image: url(../img/spr1.png);
+    background-size: 100%;
+    overflow: hidden;
+    margin: 0 auto .08rem;
+}
+.ih{
+	background-position-y: -4.2rem;
+	
+}
+.ic{
+	background-position-y: -.6rem;
+}
+.is{
+	background-position-y: -1.8rem;
+}
+.if{
+	background-position-y: -3rem;
+}
+
+
+
+.actionh{
+	background-position-y: -3.6rem;
+}
+.actionc{
+	background-position-y: 0rem;
+}
+.actions{
+	background-position-y: -1.2rem;
+}
+.actionf{
+	background-position-y: -2.4rem;
+}
+.nav p{
+	color: #ff5722;
+	font-size: .22rem;
+	line-height: .8;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>shoppingcar</title>
+    <link rel="stylesheet" type="text/css" href="css/shoppingcar.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+    <div class="web_wrapper">
+        <!-- shoppingcar 购物车 -->
+        <div class="web_header clearfix">
+            <div class="header_left float_L">
+                <img src="images/icon_back_n.png" alt="">
+            </div>
+            <div class="header_right float_R">
+                <img src="images/搜索2.png">
+            </div>
+            <div class="header_title">购物车</div>
+        </div>
+        <!-- commodity商品 -->
+        <div class="product">
+            <!--             <ul class="clearfix">
+                <li class="c1 clearfix">
+                    <img src="images/87.jpg" alt="">
+                    <div>
+                        <span>小米5</span>
+                        <span>黑色</span>
+                        <span>99元</span>
+                    </div>
+                    <dl>
+                        <dt class="k1">-</dt>
+                        <input type="text" value="1">
+                        <dt class="k2">+</dt>
+                    </dl>
+                </li>
+            </ul> -->
+            <!-- <img class="c2" src="images/136.png" alt=""> -->
+        </div>
+        <ul class="jiesuan">
+            <li>
+                <span>结算</span>
+                <span>元</span>
+            </li>
+        </ul>
+        <div class="commodity">
+            <a href="classification.html">全部商品</a>
+            <a href="featuredProduct.html" target="_top">精选商品</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src='js/jquery-3.1.0.min.js'></script>
+<script>
+var headerLeft = document.getElementsByClassName("header_left")[0];
+headerLeft.onclick = function() {
+    // console.log("ok");
+    window.history.back();
+};
+displayFn();
+
+function displayFn() {
+    if (localStorage.getItem("shabiyoujun1") != null) {
+        $(".c2").css("display", "none");
+        $(".jiesuan").css("display", "block");
+    } else {
+        $(".c2").css("display", "block")
+        $(".jiesuan").css("display", "none")
+    }
+};
+
+function clickFn() {
+    $(".k1").on("touchstart", function() {
+        var value = parseInt($(".c1>dl>input").eq($(this).index(".k1")).prop("value"));
+        $(".c1>dl>input").eq($(this).index(".k1")).prop("value", value - 1);
+        if ($(".c1>dl>input").eq($(this).index(".k1")).prop("value") <= 0) {
+            $(".c1>dl>input").eq($(this).index(".k1")).prop("value", 0)
+        }
+        var ooo = '';
+        var strArr = [];
+        yangshiArr[$(this).index(".k1")].num = $(".c1>dl>input").eq($(this).index(".k1")).prop("value");
+        for (var j = 0; j < yangshiArr.length; j++) {
+            var ttt = JSON.stringify(yangshiArr[j])
+            strArr.push(ttt);
+            ooo += strArr[j] + "huh";
+        }
+        localStorage.setItem("shabiyoujun1", ooo);
+        jiesuanFn();
+    })
+    $(".k2").on("touchstart", function() {
+        var value = parseInt($(".c1>dl>input").eq($(this).index(".k2")).prop("value"));
+        $(".c1>dl>input").eq($(this).index(".k2")).prop("value", value + 1);
+        var ooo = '';
+        var strArr = [];
+        yangshiArr[$(this).index(".k2")].num = $(".c1>dl>input").eq($(this).index(".k2")).prop("value");
+        for (var j = 0; j < yangshiArr.length; j++) {
+            var ttt = JSON.stringify(yangshiArr[j])
+            strArr.push(ttt);
+            ooo += strArr[j] + "huh";
+        }
+        localStorage.setItem("shabiyoujun1", ooo);
+        jiesuanFn();
+    })
+}
+if (localStorage.getItem("shabiyoujun1") != null) {
+    var oyangshi = localStorage.getItem("shabiyoujun1").split("huh"); //用hun字符串分割成数组
+    oyangshi.pop() //删除最后一个空格
+    var yangshiArr = [];
+    for (var i = 0; i < oyangshi.length; i++) {
+        yangshiArr.push(JSON.parse(oyangshi[i])) //放入数组
+        $(".product").append($("<ul class='clearfix '> <li class='c1 clearfix'> <img class='newimg'></img> <div> <span></span> <span></span><span></span></div> <dl> <dt class='k1'>-</dt> <input class='k3' type='text' value='1'></input> <dt class='k2'>+</dt> </dl> </li></ul>"))
+        $("ul").eq(i).attr("bianhao", yangshiArr[i].id);
+        $(".c1").eq(i).find("img").prop("src", yangshiArr[i].imgsrc);
+        $(".c1").eq(i).find("div span").eq(0).text(yangshiArr[i].value);
+        $(".c1").eq(i).find("div span").eq(1).text(yangshiArr[i].color);
+        $(".c1").eq(i).find("div span").eq(2).text(yangshiArr[i].money)
+        $(".c1").eq(i).find("dl input").prop("value", yangshiArr[i].num)
+    }
+    jiesuanFn();
+    clickFn();
+}
+
+function jiesuanFn() {
+    var ojiesuan = 0;
+    for (var i = 0; i < oyangshi.length; i++) {
+        ojiesuan += parseInt($(".c1").eq(i).find("dl input").prop("value"))
+    }
+    $(".jiesuan>li>span").eq(1).text(ojiesuan * 1799 + "元");
+}
+var yangshi = {
+    "id": '',
+    "num": 0,
+    "value": '',
+    "imgsrc": '',
+    "color": '',
+    "money": 0,
+}
+
+$(".c1>dl>input").on("change", function() {
+    var ooo = '';
+    var strArr = [];
+    yangshiArr[$(this).index(".k3")].num = $(this).prop("value");
+    for (var j = 0; j < yangshiArr.length; j++) {
+        var ttt = JSON.stringify(yangshiArr[j])
+        strArr.push(ttt);
+        ooo += strArr[j] + "huh";
+    }
+    localStorage.setItem("shabiyoujun1", ooo);
+    jiesuanFn();
+})
+</script>
+
+</html>

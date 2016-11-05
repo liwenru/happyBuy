@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal-center.css"></link>
+		<script src="js/chenge.js" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="page-personal-center">
+				<div class="b1">
+					<div class="new-info">
+						<div class="name">
+							<a href="signin.html" target="_top">
+								<h2 id="loging">立即登陆</h2>
+							</a>
+						</div>
+
+						<div class="img islogin">
+							<p>+</p>
+						</div>
+					</div>
+
+					<div class="new-nav">
+						<ul>
+							<li>
+								<a href="###">
+									<div class="spr spr1"></div>
+									<p>全部订单</p>
+									<div class="line"></div>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="spr spr2"></div>
+									<p>代付款</p>
+									<div class="line"></div>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="spr spr3"></div>
+									<p>待收货</p>
+									<div class="line"></div>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<ol class="list">
+					<li>
+						<strong class="sprl ic2"></strong>
+						<span>我的优惠</span>
+					</li>
+					<li>
+						<strong class="sprl if2"></strong>
+						<span>F码通道</span>
+					</li>
+				</ol>
+
+				<ol class="list">
+					<li>
+						<strong class="sprl ise"></strong>
+						<span>我的服务</span>
+					</li>
+				</ol>
+
+				<ol class="list">
+					<li>
+						<strong class="sprl is2"></strong>
+						<span>设置</span>
+					</li>
+				</ol>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		var storage = window.localStorage; //获取储蓄数据
+//		console.log(storage);
+		var getusername = storage["username"]; //储存的账号
+		var getPwd = storage["password"];//储存的密码	
+		var htmlsrc=storage["htmlsrc"];
+//		console.log(htmlsrc);
+		var loging=document.getElementById("loging");
+		loging.onclick=function(){
+			window.location.href="signin.html";
+		
+		}
+		loging.innerHTML=getusername;
+		if(typeof(getusername) == "undefined"){
+			loging.innerHTML = "立即登录";
+		}
+
+		
+		
+	</script>
+
+</html>

@@ -1,0 +1,182 @@
+.page-personal-center{
+	background: #F5F5F5;
+	width: 100%;
+	/*height: 100%;*/
+	padding-bottom: 3rem;
+}
+.b1{
+	background-color: #fff;
+}
+.new-info{
+	background: #ff6800;
+	text-align: center;
+	height: 1.4rem;
+	padding-top: .4rem;
+	margin-bottom: .7rem;
+}
+.name{
+	font-size: .34rem;
+	font-weight: 700;
+	color: #FFF;
+	margin-bottom: .2rem;
+}
+.islogin{
+	background-color: #ffD24D;
+	line-height: 1.44rem;
+	color: #FFF;
+	font-size: .8rem;
+	font-weight: 400;
+}
+.img{
+	width: 1.4rem;
+	height: 1.4rem;
+	margin: 0 auto;
+	border-radius: 1.4rem;
+	border: 2px solid #FFF;
+	overflow: hidden;
+}
+
+.new-nav{
+	 padding: .2rem;
+    padding-bottom: .4rem;
+    margin-bottom: .3rem;
+}
+.new-nav ul{
+	display: -webkit-box;
+	-webkit-box-pack: center;
+}
+.new-nav ul li{
+	-webkit-box-flex: 1;
+	width:100%;
+	text-align: center;
+	border-radius: 1px soild #ececec;
+}
+.new-nav ul li a{
+	display: block;
+	color: black;
+}
+
+.new-nav p {
+    margin-top: .16rem;
+    font-size: .26rem;
+}
+
+
+.spr1{
+	background-position-y: 0;
+}
+.spr2{
+	background-position-y: -1.4rem;
+}
+.spr3{
+	background-position-y: -.7rem;
+}
+.spr{
+	width: .7rem;
+	height: .7rem;
+	background-image: url(../img/spr2.png);
+	background-size: 100%;
+	margin: 0 auto;
+}
+.new-nav li:first-child .line{
+	background: #E33F7B;
+}
+.line{
+	width: .52rem;
+    margin: .24rem auto 0;
+    color: #FFF;
+	background: #8BC34A;
+	height: .02rem;
+}
+.new-nav li:last-child .line {
+    background: #FA0;
+}
+
+
+
+.list{
+	background: #FFF;
+	margin-bottom: .24rem;
+}
+.list li{
+	border-bottom: 1px solid #ECECEC;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	height: .8rem;
+}
+.sprl{
+	width: .4rem;
+	height: .4rem;
+	display: block;
+	margin: 0 .2rem 0 .3rem;
+	background-image: url(../img/spr2.png);
+	background-size: .6rem 3.4rem
+}
+.ic2{
+	background-position-y: -2.2rem;
+}
+.if2{
+	background-position-y: -2.6rem;
+}
+.ise{
+	background-position-y: -1.8rem;
+}
+.is2{
+	background-position-y: -3rem;
+}
+.list span{
+	font-size: .26rem;
+	display: block;
+}
+
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 99;
+	border-top: 1px solid #E0E0E0;
+}
+.footer ul{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.footer ul li{
+	-webkit-box-flex: 1;
+	width: 100%;
+	text-align: center;
+}
+
+.footer ul li a{
+	display: block;
+	padding: .12rem 0;
+}
+.ispr{
+    width: .6rem;
+    height: .6rem;
+    background-image: url(../img/spr1.png);
+    background-size: 100%;
+    overflow: hidden;
+    margin: 0 auto .08rem;
+}
+.ih{
+	background-position-y: -4.2rem;
+	
+}
+.ic{
+	background-position-y: -.6rem;
+}
+.is{
+	background-position-y: -1.8rem;
+}
+.if{
+	background-position-y: -2.39rem;
+}
+.nav p{
+	color: #ff5722;
+	font-size: .22rem;
+	line-height: .8;
+}

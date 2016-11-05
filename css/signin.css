@@ -1,0 +1,194 @@
+.wrap{
+	/*padding-bottom: .9rem;*/
+	background: #eee;
+}
+.returnup{
+	 position: absolute;
+    top: 1%;
+    z-index: 1;
+    width: 10%;
+    left: 0;
+}
+.returnup img{
+	width: 100%;
+}
+
+.layout{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+	box-sizing: border-box;
+}
+.ercode{
+	background: url(../img/ercode_hover.png);
+	width: 68px;
+	height: 68px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header_tit{
+	padding: 0.5rem 0 0.2rem;
+	text-align: center;
+}
+.t-c{
+	text-align: center;
+}
+.milogo{
+	width: 49px;
+	height: 48px;
+	    margin: 0 auto 10%;
+	display: block;
+	
+}
+.head_tit_text{
+    font-size: 0.4rem;
+    color: #424242;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+
+.sing_imgarea{
+	text-align: center;
+}
+.na-img-area{
+	width: 80px;
+    height: 80px;
+    border: 2px solid #e3e3e3;
+    border-radius: 50%;
+    padding: 4px;
+    background: #fff;
+    position: relative;
+    z-index: 4;
+    margin: 0 auto;
+}
+.na-img-bg-area{
+	background: url(../img/n-avator-bg.png);
+	background-size: cover;
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.item_account {
+    width: 100%;
+    padding: .1rem 0;
+    line-height: normal;
+    display: block;
+    font-size: .4rem;
+    border-radius: 16px 16px 0 0;
+    text-indent: 0.3rem;
+    border: 0;
+    margin-top: 0.5rem;
+    margin-bottom: -0.16rem;
+}
+
+
+.eye{
+    width: 0.45rem;
+    height: 0.5rem;
+    display: block;
+    margin-left: 85%;
+    margin-top: 6%;
+}
+.eye_inner{
+    fill: #4d4d4d;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-opacity: .8;
+}
+.pwd{
+	width: 100%;
+    padding: .1rem 0;
+    line-height: normal;
+    display: block;
+    font-size: .4rem;
+    border-radius:0 0 16px 16px;
+    text-indent: 0.3rem;
+    border: 0;
+   margin-top: -0.7rem;
+}
+
+.btn_orange{
+	width: 100%;
+	background-color: #33b4ff;
+	    margin-top: 10%;
+    padding: .1rem 0;
+    display: block;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: .4rem;
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    border-radius: .2rem;
+    border: 1px solid rgba(186,186,186,0.3);
+    overflow: hidden;
+}
+
+
+fieldset{
+	border: 0;
+}
+.oth_type_tit {
+    border-top: 1px dashed #bdbdbd;
+    padding-top: 5%;
+}
+.oth_type_txt {
+    font-size: .3rem;
+    color: #b0b0b0;
+}
+.oth_type_links {
+    /*padding-top: 10px;*/
+    text-align: center;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-pack: center;
+    box-pack: center;
+}
+.icon_type {
+    width: 45px;
+    height: 45px;
+    margin: 0 12px;
+    display: inline-block;
+    text-indent: -9999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.btn_qq {
+    background-color: #0288d1;
+}
+
+.btn_sns_icontype {
+	background: url(../img/iconstype_wap.png);
+	    display: block;
+    background-size: auto 29px;
+    width: 39px;
+    height: 29px;
+    margin: 8px auto 0;
+}
+
+.btn_weibo {
+    background-color: #d32f2f;
+}
+ .icon_default_weibo{
+    background-position: -39px 0;
+}
+.btn_alipay {
+    background-color: #0ae;
+}
+.icon_default_alipay {
+    background-position: -78px 0;
+}
+
+
+

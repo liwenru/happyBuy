@@ -1,0 +1,196 @@
+.float_L {
+    float: left;
+}
+
+.float_R {
+    float: right;
+}
+
+.clearfix:after {
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    display: block;
+    content: "";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.web_wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.web_header {
+    position: relative;
+    height: 3rem;
+    background-color: rgb(231, 231, 231);
+    border-bottom: 1px solid #E0DDDD;
+    margin-bottom: 3%;
+}
+
+.header_left {
+    width: 7%;
+    top: 23%;
+    /*border: 1px solid black;*/
+    position: absolute;
+}
+
+.header_right {
+    width: 7%;
+    top: 23%;
+    right: 3%;
+    /*border: 1px solid black;*/
+    position: absolute;
+}
+
+.header_title {
+    font-size: 1rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.header_left img,
+.header_right img {
+    width: 100%;
+}
+
+
+/*commodity*/
+
+.produnct {
+    text-align: center;
+}
+
+.product>img {
+    display: block;
+    width: 7.5rem;
+    margin: 4rem auto;
+}
+
+.commodity {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.commodity a {
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+}
+
+.commodity a:nth-of-type(1) {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.commodity a:nth-of-type(2) {
+    background-color: #FF5722;
+    color: white;
+}
+
+.product>ul {
+    font-size: 1rem;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    content: '';
+}
+
+.c1 {
+    position: relative;
+    height: 8rem;
+    margin-bottom: 0.4rem;
+}
+
+.c1>img {
+    float: left;
+    width: 8rem;
+    height: 8rem;
+}
+
+.c1>div {
+    /*width: 7rem;*/
+    height: 8rem;
+    font-size: 1rem;
+    float: left;
+    margin-top: 1rem;
+}
+
+.c1>div>span {
+    display: block;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.c1>div>span:nth-of-type(2) {
+    color: grey;
+}
+
+.c1>div>span:nth-of-type(3) {
+    color: #ff6700
+}
+
+.c1>dl {
+    position: absolute;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    bottom: 0;
+    top: 0;
+    right: 1rem;
+    margin: auto;
+}
+
+.c1>dl>dt {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    border: 0.01rem solid #757575;
+    border-right: 0;
+    float: left;
+}
+
+.c1>dl>input {
+    width: 3rem;
+    height: 2rem;
+    border: 0.01rem solid #757575;
+    float: left;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.c1>dl>dt:nth-of-type(2) {
+    border: 0.01rem solid #757575;
+    border-left: 0;
+    font-size: 1.6rem;
+}
+
+.jiesuan>li {
+    font-size: 1rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.jiesuan>li>span {
+    text-align: center;
+    color: #757575;
+}
+
+.jiesuan>li>span:nth-of-type(2) {
+    color: #ff6700;
+}
+.jiesuan{
+    display: block;
+}
